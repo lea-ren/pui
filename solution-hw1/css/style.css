@@ -5,10 +5,10 @@ body {
     /* Set the default font family and font color for our application. */
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 14px;
-    color: #000000;
+    color: black;
   
     /* Set the background color (dark mode UI!) */
-    background-color: #ffffff;
+    background-color: white;
 }
 
 p {
