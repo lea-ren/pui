@@ -1,4 +1,7 @@
+/* Classes that universal to all pages */
+
 body {
+    /* Refer to the code in pui lab */
     /* Set the default font family and font color for our application. */
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -17,120 +20,16 @@ a {
     text-decoration: none;
 }
 
-hr {
+/* dashed line under the logo */
+hr {  
     border-top: 2px solid black;
 }
 
+/* dashed line before checkout */
 .dashed-half {
-    border: dash;
+    
     width:50%;
 }
-
-.title {
-    font-size:large;
-    text-align: center;
-}
-
-.tab-btn {
-    font-family: Roboto;
-    font-size: 14px;
-    text-align: center;
-    text-decoration: none;
-    color: #000000;
-}
-
-.tab-btn-selected {
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-    text-decoration: none;
-    color: #000000;
-    background-color: yellow;
-}
-
-
-.logo {
-    width: 150px;
-    height: 150px;
-}
-
-.product-card {
-    box-sizing: border-box;
-    width: 215px;
-  
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-  
-    padding: 5px;
-  
-    border-radius: 5px;
-
-    color:black;
-    text-decoration: none;
-    text-align: left;
-
-    cursor: pointer;
-
-}
-
-
-.product-card:hover {
-    background-color: yellow;
-
-}
-
-.product-card-pic {
-    width:200px;
-    height:200px;
-    border: 2px solid;
-    
-}
-
-.detail {
-    display:block;
-
-    box-sizing: border-box;
-    width: 400px;
-  
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-
-    color:black;
-    text-decoration: none;
-    text-align: left;
-}
-
-.detail-pic {
-    width:400px;
-    height:400px;
-    border: 2px solid;
-    
-}
-
-.detail-text {
-    display:block;
-
-    box-sizing: border-box;
-    width: 200px;
-  
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-
-    color:black;
-    text-decoration: none;
-    text-align: left;
-}
-
-.price {
-    font-family:'Courier New', Courier, monospace;
-    font-weight: 700;
-    margin-inline-end: 5px;
-}
-
 
 .btn {
     width: auto;
@@ -153,7 +52,126 @@ hr {
     
 }
 
-/* for shopping cart */
+/* for page title such as shopping cart */
+.title {
+    
+    font-size:large;
+    text-align: center;
+}
+
+/* for small text such as remove */
+.small-text {
+    font-size: 8px;
+    text-decoration: underline;
+}
+
+/* The navigation tab */
+.tab-btn {
+    font-family: Roboto;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+.tab-btn-selected {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    background-color: yellow;
+}
+
+/* For the Bun Bun Bake Shop logo */
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+/* Followed are classes for the product gallery page */
+/* Container of product with yellow background while hovering */
+.product-card {
+    box-sizing: border-box;
+    width: 215px;
+  
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    padding: 5px;
+  
+    border-radius: 5px;
+
+    color:black;
+    text-decoration: none;
+    text-align: left;
+
+    cursor: pointer;
+}
+
+.product-card:hover {
+    background-color: yellow;
+
+}
+
+/* Container of product pic inside the product card */
+.product-card-pic {
+    width:200px;
+    height:200px;
+    border: 2px solid;
+    
+}
+
+/* Followed are classes for the product detail page */
+.detail {
+    display:block;
+
+    box-sizing: border-box;
+    width: 400px;
+  
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color:black;
+    text-decoration: none;
+    text-align: left;
+}
+
+/* Container of product pic in detail page */
+.detail-pic {
+    width:400px;
+    height:400px;
+    border: 2px solid;
+    
+}
+
+/* Container for text */
+.detail-text {
+    display:block;
+
+    box-sizing: border-box;
+    width: 200px;
+  
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color:black;
+    text-decoration: none;
+    text-align: left;
+}
+
+/* Adapt the font for price */
+.price {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 700;
+    margin-inline-end: 5px;
+}
+
+/* The followed classes are for the Shopping Cart Page */
 .cart-info {
     display: block;
 
@@ -165,17 +183,12 @@ hr {
     margin-right: auto;
 
     border:2px solid;
-
 }
 
+/* The followed class is for the Shopping Cart Page */
 
-.remove {
-    font-size: 8px;
-    text-decoration: underline;
-}
-
- /* the followed ".center" refer to https://www.w3schools.com/HOWTO/howto_css_center_button.asp */
-
+/* the followed ".center" refer to https://www.w3schools.com/HOWTO/howto_css_center_button.asp */
+/* This is used for centering the content inside the container */
 .center {
     margin: 0;
     position: absolute;

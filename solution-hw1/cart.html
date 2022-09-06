@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 
-<html lang="en">
-	<meta charset="UTF-8">
-
-	<title>Shopping Cart</title>
-
+<html lang='en'>
 	<head>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100;1,200&display=swap"
-		rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-		rel="stylesheet">
+    <meta charset='UTF-8'>
 
-		<link rel="stylesheet" type="text/css" href="style.css">
+	  <title>Shopping Cart</title>
+
+	
+		<link rel='preconnect' href='https://fonts.googleapis.com'>
+		<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+		<link href='https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100;1,200&display=swap'
+		rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'
+		rel='stylesheet'>
+
+		<link rel='stylesheet' type='text/css' href='style.css'>
 	</head>
 
 	<body>
-    <img class="logo" src="assets/logo-01.svg" />
+		<!-- link to product gallery if clicked -->
+    <a href='./index.html'>
+			<img class='logo' alt='logo of Bun Bun Bake Shop' src='assets/logo-01.svg' />
 		</a>
 
-		<hr class="dashed">
+		<hr class='dashed'>
 
-		<p> <a class="tab-btn" href="./product.html">PRODUCT</a> </p>
-		<p> <a class="tab-btn-selected" href="./cart.html">CART</a> </p>
+    <!-- Navigation tab for PRODUCT and CART-->
+		<p> <a class='tab-btn' href='./product.html'>PRODUCT</a> </p>
+		<p> <a class='tab-btn-selected' href='./cart.html'>CART</a> </p>
 
-		<br> <p class="title"> Shopping Cart </p> <br>
+		<br> <p class='title'> Shopping Cart </p> <br>
 
-		<!-- Starting from here is the product information -->
+		<!-- Shopping cart information -->
 
-		<img class="cart-info" alt="original cinnamon roll" src="assets/original-cinnamon-roll.jpg"/>
-		<p> <a class="remove"> Remove </a> </p>
+		<img class='cart-info' alt='original cinnamon roll' src='assets/original-cinnamon-roll.jpg'/>
+		<p> <a class='small-text'> Remove </a> </p>
         <p> Original Cinnamon Roll</p>
         <p> Glazing: Keep Original</p>
         <p> Pack Size: 1 </p> 
 
-        <p class="title"> $2.49 </p>
+        <p class='title'> $2.49 </p>
 
         <br><br>
 
-        <img class="cart-info" alt="double chocolate cinnamon roll" src="assets/double-chocolate-cinnamon-roll.jpg"/>
-		<p> <a class="remove"> Remove </a> </p>
+        <img class='cart-info' alt='double chocolate cinnamon roll' src='assets/double-chocolate-cinnamon-roll.jpg'/>
+		<p> <a class='small-text'> Remove </a> </p>
         <p> Double Chocolate Cinnamon Roll</p>
         <p> Glazing: Sugar milk</p>
         <p> Pack Size: 6 </p>
 
-        <p class="title"> $27.45 </p>
+        <p class='title'> $27.45 </p>
         <br>
 		
-        <hr class="dashed-half"> 
+        <!-- Total prices and checkout -->
+
+        <hr class='dashed-half'> 
         <p> Total: $ 29.94 </p>
-        <div class="center">
-            <button class="btn">Checkout</button>
-        </div>
-        
-        
+        <div class='center'>
+            <button class='btn'>Checkout</button>
+        </div>   
 
 	</body>
 

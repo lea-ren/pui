@@ -1,74 +1,83 @@
 <!DOCTYPE html>
 
-<html lang="en">
-	<meta charset="UTF-8">
-
-	<title>Product Detail Page</title>
-
+<html lang='en'>
 	<head>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100;1,200&display=swap"
-		rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-		rel="stylesheet">
+    <meta charset='UTF-8'>
 
-		<link rel="stylesheet" type="text/css" href="style.css">
+	  <title>Product Detail Page</title>
+	
+		<link rel='preconnect' href='https://fonts.googleapis.com'>
+		<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+		<link href='https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100;1,200&display=swap'
+		rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'
+		rel='stylesheet'>
+
+		<link rel='stylesheet' type='text/css' href='style.css'>
 	</head>
 
 	<body>
-		<a href="./index.html">
-			<img class="logo" src="assets/logo-01.svg" />
+    <!-- Link to product gallery if clicked -->
+		<a href='./index.html'>
+			<img class='logo' alt='logo of Bun Bun Bake Shop' src='assets/logo-01.svg' />
 		</a>
 
-		<hr class="dashed">
+		<hr class='dashed'>
 
-		<p> <a class="tab-btn-selected" href="./product.html">PRODUCT</a> </p>
-		<p> <a class="tab-btn" href="./cart.html">CART</a> </p>
+    <!-- Navigation tab for PRODUCT and CART-->
+		<p> <a class='tab-btn-selected' href='./product.html'>PRODUCT</a> </p>
+		<p> <a class='tab-btn' href='./cart.html'>CART</a> </p>
 
-		<br> <p class="title"> Our hand-made cinnamon rolls </p> <br>
+		<br> <p class='title'> Our hand-made cinnamon rolls </p> <br>
 
 		<!-- Starting from here is the product information -->
 
 		
-			<div class="detail">
-				<img class="detail-pic" alt="original cinnamon roll" src="assets/original-cinnamon-roll.jpg"/>
+			<div class='detail'>
+				<img class='detail-pic' alt='original cinnamon roll' src='assets/original-cinnamon-roll.jpg'/>
 
       </div>
 
-      <div class="detail-text">
+      <!-- Detail information -->
+
+      <div class='detail-text'>
         <br><br>
         Customize our delicious, <br>
         hand-made cinnamon roll to <br>
         your liking! <br>
         <br><br>
 
+        <!-- Dropdown menu to select glazing -->
         Glazing <br>
         <form>
-          <select name = "Glazing">
-          <option value = "keep-original" selected>Keep original</option>
-          <option value = "sugar-milk">Sugar milk</option>
-          <option value = "vanilla-milk" >Vanilla milk</option>
-          <option value = "double-chocolate">Double chocolate</option>
+          <select name = 'Glazing'>
+          <option value = 'keep-original' selected>Keep original</option>
+          <option value = 'sugar-milk'>Sugar milk</option>
+          <option value = 'vanilla-milk' >Vanilla milk</option>
+          <option value = 'double-chocolate'>Double chocolate</option>
           </select>
         </form>
 
         <br>
+
+        <!-- Dropdown menu to select pack size -->
         Pack size <br>
         <form>
-          <select name = "Glazing">
-          <option value = "1" selected> 1 </option>
-          <option value = "3"> 3 </option>
-          <option value = "6" > 6 </option>
-          <option value = "12"> 12 </option>
+          <select name = 'Glazing'>
+          <option value = '1' selected> 1 </option>
+          <option value = '3'> 3 </option>
+          <option value = '6' > 6 </option>
+          <option value = '12'> 12 </option>
           </select>
         </form>
 
         <br><br><br>
 
-        <div class="price"> 
-          $ 2.49    
-          <button class="btn">
+        <div class='price'> 
+          $ 2.49
+
+          <!-- Button to add to cart -->  
+          <button class='btn'>
             Add to Cart
           </button>
         </div>
