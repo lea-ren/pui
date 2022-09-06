@@ -1,0 +1,147 @@
+body {
+    /* Set the default font family and font color for our application. */
+    font-family: Roboto, Arial, Helvetica, sans-serif, 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: #000000;
+  
+    /* Set the background color (dark mode UI!) */
+    background-color: #ffffff;
+}
+
+p {
+    /* Set the default font family and font color for our application. */
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid black;
+}
+
+
+.tab-btn {
+    font-family: Roboto;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+.tab-btn-selected {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    background-color: yellow;
+}
+
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.product-card {
+    box-sizing: border-box;
+    width: 215px;
+  
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    padding: 5px;
+  
+    border-radius: 5px;
+
+    color:black;
+    text-decoration: none;
+    text-align: left;
+
+    cursor: pointer;
+
+}
+
+
+.product-card:hover {
+    background-color: yellow;
+
+}
+
+.product-card-pic {
+    width:200px;
+    height:200px;
+    border: 2px solid;
+    
+}
+
+.detail {
+    display:block;
+
+    box-sizing: border-box;
+    width: 400px;
+  
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color:black;
+    text-decoration: none;
+    text-align: left;
+    font:roboto;
+}
+
+.detail-pic {
+    width:400px;
+    height:400px;
+    border: 2px solid;
+    
+}
+
+.detail-text {
+    display:block;
+
+    box-sizing: border-box;
+    width: 200px;
+  
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color:black;
+    text-decoration: none;
+    text-align: left;
+}
+
+.price {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 700;
+    margin-inline-end: 5px;
+}
+
+
+.btn {
+    width: auto;
+    height: 25px;
+
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: yellow;
+    /* border: 2px solid #dddddd;*/
+}
