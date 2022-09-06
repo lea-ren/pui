@@ -1,6 +1,6 @@
 body {
     /* Set the default font family and font color for our application. */
-    font-family: Roboto, Arial, Helvetica, sans-serif, 'Courier New', Courier, monospace;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #000000;
   
@@ -18,10 +18,18 @@ a {
 }
 
 hr {
-    border: none;
     border-top: 2px solid black;
 }
 
+.dashed-half {
+    border: dash;
+    width:50%;
+}
+
+.title {
+    font-size:large;
+    text-align: center;
+}
 
 .tab-btn {
     font-family: Roboto;
@@ -93,7 +101,6 @@ hr {
     color:black;
     text-decoration: none;
     text-align: left;
-    font:roboto;
 }
 
 .detail-pic {
@@ -143,5 +150,36 @@ hr {
 
 .btn:hover {
     background-color: yellow;
-    /* border: 2px solid #dddddd;*/
+    
+}
+
+/* for shopping cart */
+.cart-info {
+    display: block;
+
+    box-sizing: border-box;
+    width: 70px;
+  
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border:2px solid;
+
+}
+
+
+.remove {
+    font-size: 8px;
+    text-decoration: underline;
+}
+
+ /* the followed ".center" refer to https://www.w3schools.com/HOWTO/howto_css_center_button.asp */
+
+.center {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
