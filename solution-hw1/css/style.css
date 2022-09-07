@@ -4,7 +4,7 @@ body {
     /* Refer to the code in pui lab */
     /* Set the default font family and font color for our application. */
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     color: black;
   
     /* Set the background color (dark mode UI!) */
@@ -55,20 +55,20 @@ hr {
 /* for page title such as shopping cart */
 .title {
     
-    font-size:large;
+    font-size: 28px;
     text-align: center;
 }
 
 /* for small text such as remove */
 .small-text {
-    font-size: 8px;
+    font-size: 12px;
     text-decoration: underline;
 }
 
 /* The navigation tab */
 .tab-btn {
     font-family: Roboto;
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
     color: #000000;
@@ -77,7 +77,7 @@ hr {
 .tab-btn-selected {
     font-family: Roboto;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
     color: #000000;
@@ -94,7 +94,7 @@ hr {
 /* Container of product with yellow background while hovering */
 .product-card {
     box-sizing: border-box;
-    width: 215px;
+    width: 315px;
   
     margin-top: 5px;
     margin-left: auto;
@@ -118,8 +118,8 @@ hr {
 
 /* Container of product pic inside the product card */
 .product-card-pic {
-    width:200px;
-    height:200px;
+    width:300px;
+    height:300px;
     border: 2px solid;
     
 }
@@ -129,7 +129,7 @@ hr {
     display:block;
 
     box-sizing: border-box;
-    width: 400px;
+    width: 500px;
   
     margin-top: 5px;
     margin-left: auto;
@@ -142,8 +142,8 @@ hr {
 
 /* Container of product pic in detail page */
 .detail-pic {
-    width:400px;
-    height:400px;
+    width:500px;
+    height:500px;
     border: 2px solid;
     
 }
@@ -153,7 +153,7 @@ hr {
     display:block;
 
     box-sizing: border-box;
-    width: 200px;
+    width: 300px;
   
     margin-top: 5px;
     margin-left: auto;
@@ -176,7 +176,7 @@ hr {
     display: block;
 
     box-sizing: border-box;
-    width: 70px;
+    width: 150px;
   
     margin-top: 5px;
     margin-left: auto;
