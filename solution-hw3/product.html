@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+	<head>
+
+  <meta charset='UTF-8'>
+
+	<title>Product Gallery</title>
+
+	
+		<link rel='preconnect' href='https://fonts.googleapis.com'>
+		<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+		<link href='https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100;1,200&display=swap'
+		rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'
+		rel='stylesheet'>
+
+		<link rel='stylesheet' type='text/css' href='./css/style.css'>
+    <script defer src="price.js"></script>
+	</head>
+
+	<body>
+    <div class='header'>
+		<div class='header-left'>
+		<!-- link to product gallery if clicked -->
+			<a href='./index.html'>
+				<img class='logo' alt='logo of Bun Bun Bake Shop' src='assets/logo-01.svg'/>
+			</a>
+		</div>
+		<div class='header-right'>
+<!-- Navigation tab for PRODUCT and CART-->
+		<div class='nav'>
+			<p> <a class='tab-btn-selected' href='./product.html'>PRODUCT</a> </p>
+			<p> <a class='tab-btn' href='./cart.html'>CART</a> </p>
+		</div>
+		<hr class='dashed'>
+		<p class='title'> Original cinnamon roll </p>
+		</div>
+	</div>
+		<!-- Starting from here is the product information -->
+
+		<div class='row'>
+
+			<div class='detail'>
+				<img class='detail-pic' alt='original cinnamon roll' src='assets/original-cinnamon-roll.jpg'/>
+
+      </div>
+
+      <!-- Detail information -->
+
+      <div class='detail-text'>
+        <br><br>
+        Customize our delicious, <br>
+        hand-made cinnamon roll to <br>
+        your liking! <br>
+        <br><br>
+
+        <!-- Dropdown menu to select glazing -->
+        Glazing <br>
+        <form>
+          <select name = 'Glazing' id="packSizeOptions" onchange="glazingChange(this)">
+          <option value = 0 selected>Keep original</option>
+          <option value = 1>Sugar milk</option>
+          <option value = 2>Vanilla milk</option>
+          <option value = 3>Double chocolate</option>
+          </select>
+        </form>
+
+        <br>
+
+        <!-- Dropdown menu to select pack size -->
+        Pack size <br>
+        <form>
+          <select name = 'packSize'id="glazingOptions"
+          onchange="packSizeChange(this)">
+          <option value = 1 selected> 1 </option>
+          <option value = 3> 3 </option>
+          <option value = 5> 6 </option>
+          <option value = 10> 12 </option>
+          </select>
+        </form>
+
+        <br><br><br>
+
+        <div class='price' > 
+          <p id="price">$2.49 </p>
+
+          <!-- Button to add to cart -->  
+          <button class='btn'>
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+	</body>
+
+</html>
