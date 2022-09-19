@@ -206,11 +206,17 @@ hr {
     text-align: left;
 }
 
+.customize-option {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
 /* Adapt the font for price */
 .price {
     font-family:'Courier New', Courier, monospace;
     font-weight: 700;
     margin-inline-end: 5px;
+    padding-top: 30px;
 }
 
 /* The followed classes are for the Shopping Cart Page */

@@ -30,7 +30,7 @@
 		<div class='header-right'>
 <!-- Navigation tab for PRODUCT and CART-->
 		<div class='nav'>
-			<p> <a class='tab-btn-selected' href='./product.html'>PRODUCT</a> </p>
+			<p> <a class='tab-btn-selected' href='./index.html'>PRODUCT</a> </p>
 			<p> <a class='tab-btn' href='./cart.html'>CART</a> </p>
 		</div>
 		<hr class='dashed'>
@@ -49,14 +49,15 @@
       <!-- Detail information -->
 
       <div class='detail-text'>
-        <br><br>
+        
         Customize our delicious, <br>
         hand-made cinnamon roll to <br>
-        your liking! <br>
-        <br><br>
-
+        your liking!
+        
         <!-- Dropdown menu to select glazing -->
-        Glazing <br>
+        <div class='customize-option'>
+          Glazing
+        </div>
         <form>
           <select name = 'Glazing' id="packSizeOptions" onchange="glazingChange(this)">
           <option value = 0 selected>Keep original</option>
@@ -66,10 +67,10 @@
           </select>
         </form>
 
-        <br>
-
         <!-- Dropdown menu to select pack size -->
-        Pack size <br>
+        <div class='customize-option'>
+          Pack size
+        </div>
         <form>
           <select name = 'packSize'id="glazingOptions"
           onchange="packSizeChange(this)">
@@ -83,7 +84,7 @@
         <br><br><br>
 
         <div class='price' > 
-          <p id="price">$2.49 </p>
+          $2.49
 
           <!-- Button to add to cart -->  
           <button class='btn'>

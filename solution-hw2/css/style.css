@@ -211,6 +211,12 @@ hr {
     font-family:'Courier New', Courier, monospace;
     font-weight: 700;
     margin-inline-end: 5px;
+    padding-top: 30px;
+}
+
+.customize-option {
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 /* The followed classes are for the Shopping Cart Page */
@@ -249,6 +255,7 @@ hr {
 .item-price {
     flex: 0 1 auto;
 }
+
 /* the followed '.center' refer to https://www.w3schools.com/HOWTO/howto_css_center_button.asp */
 /* This is used for centering the content inside the container */
 .center {
