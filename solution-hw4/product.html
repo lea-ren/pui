@@ -17,7 +17,6 @@
 
 		<link rel='stylesheet' type='text/css' href='./css/style.css'>
     <script src="rollsData.js"></script>
-    <script src="cart.js"></script>
     <script defer src="price.js"></script>
 	</head>
 
@@ -62,10 +61,10 @@
         </div>
         <form>
           <select name = 'Glazing' id="packSizeOptions" onchange="glazingChange(this)">
-          <option value = 0 selected>Keep original</option>
-          <option value = 1>Sugar milk</option>
-          <option value = 2>Vanilla milk</option>
-          <option value = 3>Double chocolate</option>
+          <option value = 'Keep original' selected>Keep original</option>
+          <option value = 'Sugar milk'>Sugar milk</option>
+          <option value = 'Vanilla milk'>Vanilla milk</option>
+          <option value = 'Double chocolate'>Double chocolate</option>
           </select>
         </form>
 
@@ -76,10 +75,10 @@
         <form>
           <select name = 'packSize'id="glazingOptions"
           onchange="packSizeChange(this)">
-          <option value = 1 selected> 1 </option>
-          <option value = 3> 3 </option>
-          <option value = 5> 6 </option>
-          <option value = 10> 12 </option>
+          <option value = '1' selected> 1 </option>
+          <option value = '3'> 3 </option>
+          <option value = '6' > 6 </option>
+          <option value = '12'> 12 </option>
           </select>
         </form>
 

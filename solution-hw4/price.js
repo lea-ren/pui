@@ -1,32 +1,30 @@
-//Extract current roll information
+// Extract current roll information
 const queryString = window.location.search;
-console.log(queryString);
-
 const params = new URLSearchParams(queryString);
-console.log(params);
-
 const chosenRoll = params.get('roll')
-console.log(chosenRoll);
 
-//Manipulate the name of roll on the DOM
+// Manipulate the name of roll on the DOM
 const headerElement = document.querySelector('#roll-header-text');
 headerElement.innerText = chosenRoll + ' cinnamon roll'
 
-//Manipulate the Image on the DOM
+// Manipulate the Image on the DOM
 const rollImage = document.querySelector('#roll-img');
 rollImage.src = './assets/' + rolls[chosenRoll]["imageFile"];
 
-//Manipulate the Price on the DOM
-//Set defalt glazing to original and the price is 0
-let glazingOption = 0; // 0 for original, 1 for sugar milk, 2 for vanilla, 3 for double chocolate
+// Manipulate the Price on the DOM
+// Set defalt glazing to original and the price to 0
+let glazingOption = 'Keep original';
 let glazingPrice = 0; // the corresponding price for the chosen glazing
+const glazingPriceList = {'Keep original': 0, 'Sugar milk': 0, 'Vanilla milk': 0.5, 'Double chocolate': 1.5};
 
-//Set base price to corresponding price of the chosen roll
+// Set base price to corresponding price of the chosen roll
 const basePrice = rolls[chosenRoll]["basePrice"];
 
-//Set packsize to 1 as default
+// Set packsize to 1 as default
+let packSizeOption = '1';
 let packSize = 1;
-const glazingPriceList = [0, 0, 0.5, 1.5]
+const packSizeList = {'1': 1, '3': 3, '6': 5, '12': 10};
+
 
 updatePrice(glazingPrice, packSize)
 
@@ -54,8 +52,9 @@ function glazingChange(element) {
 function packSizeChange(pack) {
     // get value of selected packsize option
     const newPackSize = pack.value;
-    console.log(newPackSize);
-    packSize = newPackSize;
+    //
+    packSizeOption = newPackSize;
+    packSize = packSizeList[packSizeOption];
 
     // update the price
     updatePrice(glazingPrice, packSize)
@@ -76,7 +75,7 @@ let cart = new Array();
 
 // push the new roll to cart array
 function addToCart() {
-    let newRoll = new Roll(chosenRoll, glazingOption, packSize, basePrice);
+    let newRoll = new Roll(chosenRoll, glazingOption, packSizeOption, basePrice);
     cart.push(newRoll)
     console.log(cart);
 }
