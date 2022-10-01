@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+	<head>
+
+  <meta charset='UTF-8'>
+
+	<title>Product Gallery</title>
+
+	
+		<link rel='preconnect' href='https://fonts.googleapis.com'>
+		<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+		<link href='https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100;1,200&display=swap'
+		rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'
+		rel='stylesheet'>
+
+		<link rel='stylesheet' type='text/css' href='./css/style.css'>
+		<script src="rollsData.js"></script>
+		<script defer src="cart.js"></script>
+	</head>
+
+	<body>
+    <div class='header'>
+		<div class='header-left'>
+		<!-- link to product gallery if clicked -->
+			<a href='./index.html'>
+				<img class='logo' alt='logo of Bun Bun Bake Shop' src='assets/logo-01.svg'/>
+			</a>
+		</div>
+		<div class='header-right'>
+<!-- Navigation tab for PRODUCT and CART-->
+		<div class='nav'>
+			<p> <a class='tab-btn' href='./index.html'>PRODUCT</a> </p>
+			<p> <a class='tab-btn-selected' href='./cart.html'>CART</a> </p>
+		</div>
+		<hr class='dashed'>
+		<p class='title'> Shopping cart </p>
+		</div>
+	</div>
+		<!-- Shopping cart information -->
+<div class='row'>
+	<div class='item-box'>
+		<div class='item-container' id="roll-0">
+			<div class='item-pic'>
+				<img class='cart-info' id="roll-1-img" alt='original cinnamon roll' src='assets/original-cinnamon-roll.jpg'/>
+				<div class='delete' onclick="updateTotalPrice()"> Remove </div>
+			</div>
+
+			<div class='item-info'>
+				<div class="item-name"> Original Cinnamon Roll </div>
+				<div class="item-glazing"> Glazing: Keep Original</div>
+				<div class="item-pack-size">Pack Size: 1 </div>
+			</div>
+			
+			<div class='item-price'>
+				<p class='title'> $2.49 </p>
+			</div>
+			
+		</div>
+
+		<div class='item-container' id="roll-1">
+			<div class='item-pic'>
+				<img class='cart-info' id="roll-1-img" alt='original cinnamon roll' src='assets/original-cinnamon-roll.jpg'/>
+				<div class='delete' onclick="updateTotalPrice()"> Remove </div>
+			</div>
+
+			<div class='item-info'>
+				<div class="item-name"> Original Cinnamon Roll </div>
+				<div class="item-glazing"> Glazing: Keep Original</div>
+				<div class="item-pack-size">Pack Size: 1 </div>
+			</div>
+			
+			<div class='item-price'>
+				<p class='title'> $2.49 </p>
+			</div>
+		</div>
+
+		<div class='item-container' id="roll-2">
+			<div class='item-pic'>
+				<img class='cart-info' id="roll-1-img" alt='original cinnamon roll' src='assets/original-cinnamon-roll.jpg'/>
+				<div class='delete' onclick="updateTotalPrice()"> Remove </div>
+			</div>
+
+			<div class='item-info'>
+				<div class="item-name"> Original Cinnamon Roll </div>
+				<div class="item-glazing"> Glazing: Keep Original</div>
+				<div class="item-pack-size">Pack Size: 1 </div>
+			</div>
+			
+			<div class='item-price'>
+				<p class='title'> $2.49 </p>
+			</div>
+		</div>
+
+		<div class='item-container' id="roll-3">
+			<div class='item-pic'>
+				<img class='cart-info' id="roll-1-img" alt='original cinnamon roll' src='assets/original-cinnamon-roll.jpg'/>
+				<div class='delete' onclick="updateTotalPrice()"> Remove </div>
+			</div>
+
+			<div class='item-info'>
+				<div class="item-name"> Original Cinnamon Roll </div>
+				<div class="item-glazing"> Glazing: Keep Original</div>
+				<div class="item-pack-size">Pack Size: 1 </div>
+			</div>
+			
+			<div class='item-price'>
+				<p class='title'> $2.49 </p>
+			</div>
+		</div>
+
+ 		
+		<hr class='dashed'>
+		
+        <!-- Total prices and checkout -->
+		<div class='item-container'>
+			<div class='item-pic'></div>
+			<div class='item-info'>
+				<p class='title'> Total: </p>
+			</div>
+			<div class='item-price'>
+				<p class='title' id="total-price"> $ 29.94 </p>
+			</div>	
+		</div>
+
+		<div class='item-container'>
+			<div class='item-pic'></div>
+			<div class='item-info'>
+			</div>
+			<div class='item-price'>
+				<button class='btn'>Checkout</button>
+			</div>	
+		</div>        
+
+        
+	</div>
+</div>
+		
+
+	</body>
+
+</html>
